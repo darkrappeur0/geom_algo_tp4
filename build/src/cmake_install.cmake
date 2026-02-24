@@ -1,4 +1,4 @@
-# Install script for directory: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src
+# Install script for directory: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib/cmake_install.cmake")
+  include("/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib/cmake_install.cmake")
 
 endif()
 

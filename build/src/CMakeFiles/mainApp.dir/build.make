@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3
+CMAKE_SOURCE_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build
+CMAKE_BINARY_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/mainApp.dir/depend.make
@@ -70,18 +70,18 @@ include src/CMakeFiles/mainApp.dir/progress.make
 include src/CMakeFiles/mainApp.dir/flags.make
 
 src/CMakeFiles/mainApp.dir/main.cpp.o: src/CMakeFiles/mainApp.dir/flags.make
-src/CMakeFiles/mainApp.dir/main.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/main.cpp
+src/CMakeFiles/mainApp.dir/main.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/main.cpp
 src/CMakeFiles/mainApp.dir/main.cpp.o: src/CMakeFiles/mainApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mainApp.dir/main.cpp.o"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mainApp.dir/main.cpp.o -MF CMakeFiles/mainApp.dir/main.cpp.o.d -o CMakeFiles/mainApp.dir/main.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mainApp.dir/main.cpp.o"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mainApp.dir/main.cpp.o -MF CMakeFiles/mainApp.dir/main.cpp.o.d -o CMakeFiles/mainApp.dir/main.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/main.cpp
 
 src/CMakeFiles/mainApp.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mainApp.dir/main.cpp.i"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/main.cpp > CMakeFiles/mainApp.dir/main.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/main.cpp > CMakeFiles/mainApp.dir/main.cpp.i
 
 src/CMakeFiles/mainApp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mainApp.dir/main.cpp.s"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/main.cpp -o CMakeFiles/mainApp.dir/main.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/main.cpp -o CMakeFiles/mainApp.dir/main.cpp.s
 
 # Object files for target mainApp
 mainApp_OBJECTS = \
@@ -97,18 +97,18 @@ mainApp: /usr/lib/x86_64-linux-gnu/libgmpxx.so
 mainApp: /usr/lib/x86_64-linux-gnu/libmpfr.so
 mainApp: /usr/lib/x86_64-linux-gnu/libgmp.so
 mainApp: src/CMakeFiles/mainApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../mainApp"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mainApp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../mainApp"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mainApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/mainApp.dir/build: mainApp
 .PHONY : src/CMakeFiles/mainApp.dir/build
 
 src/CMakeFiles/mainApp.dir/clean:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mainApp.dir/cmake_clean.cmake
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mainApp.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/mainApp.dir/clean
 
 src/CMakeFiles/mainApp.dir/depend:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3 /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/CMakeFiles/mainApp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4 /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/CMakeFiles/mainApp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/mainApp.dir/depend
 

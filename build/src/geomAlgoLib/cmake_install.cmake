@@ -1,4 +1,4 @@
-# Install script for directory: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib
+# Install script for directory: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

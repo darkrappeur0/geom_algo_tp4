@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/geomAlgoLib.dir/example.cpp.o.d"
   "CMakeFiles/geomAlgoLib.dir/io.cpp.o"
   "CMakeFiles/geomAlgoLib.dir/io.cpp.o.d"
+  "CMakeFiles/geomAlgoLib.dir/lissage.cpp.o"
+  "CMakeFiles/geomAlgoLib.dir/lissage.cpp.o.d"
   "CMakeFiles/geomAlgoLib.dir/measures.cpp.o"
   "CMakeFiles/geomAlgoLib.dir/measures.cpp.o.d"
   "libgeomAlgoLib.a"

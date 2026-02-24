@@ -1,5 +1,6 @@
 #include <io.hpp>
 #include <example.hpp>
+#include <lissage.hpp>
 
 #include <iostream>
 #include <string>
@@ -24,7 +25,7 @@ int main(int argc, char *argv[]){
 
     geomAlgoLib::writeOFF(myMesh,"output.off");
 
-
+    /*
     geomAlgoLib::FacetDoubleMap tab = geomAlgoLib::aire_calcul(myMesh);
 	std::cout << "apres le calcul de l'aire au carrée" << std::endl;
     unsigned c = 0;
@@ -61,6 +62,23 @@ int main(int argc, char *argv[]){
     geomAlgoLib::StoreinFiles_labels(myMesh,res,tab,"etiquettes.off");
     
     //std::cout << "tableau des aires" << tab << std::endl;
+    */
+
+
+    auto newMesh = geomAlgoLib::lissage_1_iter(myMesh);
+
+    geomAlgoLib::writeOFF(newMesh,"output2.off");
+
+
+    auto newMesh2 = geomAlgoLib::lissage_n_iter(myMesh,4);
+
+    geomAlgoLib::writeOFF(newMesh2,"output3.off");
+
+
+
+
+
+
     std::cout << "The end..." << std::endl;
     return 0;
 }

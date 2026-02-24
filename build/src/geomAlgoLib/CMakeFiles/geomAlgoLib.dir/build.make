@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3
+CMAKE_SOURCE_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build
+CMAKE_BINARY_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build
 
 # Include any dependencies generated for this target.
 include src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/depend.make
@@ -70,52 +70,67 @@ include src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/progress.make
 include src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/flags.make
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/flags.make
-src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/example.cpp
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/example.cpp
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o -MF CMakeFiles/geomAlgoLib.dir/example.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/example.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o -MF CMakeFiles/geomAlgoLib.dir/example.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/example.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/example.cpp
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geomAlgoLib.dir/example.cpp.i"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/example.cpp > CMakeFiles/geomAlgoLib.dir/example.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/example.cpp > CMakeFiles/geomAlgoLib.dir/example.cpp.i
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geomAlgoLib.dir/example.cpp.s"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/example.cpp -o CMakeFiles/geomAlgoLib.dir/example.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/example.cpp -o CMakeFiles/geomAlgoLib.dir/example.cpp.s
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/flags.make
-src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/io.cpp
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/io.cpp
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o -MF CMakeFiles/geomAlgoLib.dir/io.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/io.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/io.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o -MF CMakeFiles/geomAlgoLib.dir/io.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/io.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/io.cpp
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geomAlgoLib.dir/io.cpp.i"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/io.cpp > CMakeFiles/geomAlgoLib.dir/io.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/io.cpp > CMakeFiles/geomAlgoLib.dir/io.cpp.i
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geomAlgoLib.dir/io.cpp.s"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/io.cpp -o CMakeFiles/geomAlgoLib.dir/io.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/io.cpp -o CMakeFiles/geomAlgoLib.dir/io.cpp.s
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/flags.make
-src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/measures.cpp
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/measures.cpp
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o -MF CMakeFiles/geomAlgoLib.dir/measures.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/measures.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/measures.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o -MF CMakeFiles/geomAlgoLib.dir/measures.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/measures.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/measures.cpp
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geomAlgoLib.dir/measures.cpp.i"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/measures.cpp > CMakeFiles/geomAlgoLib.dir/measures.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/measures.cpp > CMakeFiles/geomAlgoLib.dir/measures.cpp.i
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geomAlgoLib.dir/measures.cpp.s"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib/measures.cpp -o CMakeFiles/geomAlgoLib.dir/measures.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/measures.cpp -o CMakeFiles/geomAlgoLib.dir/measures.cpp.s
+
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/flags.make
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o: /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/lissage.cpp
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o -MF CMakeFiles/geomAlgoLib.dir/lissage.cpp.o.d -o CMakeFiles/geomAlgoLib.dir/lissage.cpp.o -c /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/lissage.cpp
+
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geomAlgoLib.dir/lissage.cpp.i"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/lissage.cpp > CMakeFiles/geomAlgoLib.dir/lissage.cpp.i
+
+src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geomAlgoLib.dir/lissage.cpp.s"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib/lissage.cpp -o CMakeFiles/geomAlgoLib.dir/lissage.cpp.s
 
 # Object files for target geomAlgoLib
 geomAlgoLib_OBJECTS = \
 "CMakeFiles/geomAlgoLib.dir/example.cpp.o" \
 "CMakeFiles/geomAlgoLib.dir/io.cpp.o" \
-"CMakeFiles/geomAlgoLib.dir/measures.cpp.o"
+"CMakeFiles/geomAlgoLib.dir/measures.cpp.o" \
+"CMakeFiles/geomAlgoLib.dir/lissage.cpp.o"
 
 # External object files for target geomAlgoLib
 geomAlgoLib_EXTERNAL_OBJECTS =
@@ -123,21 +138,22 @@ geomAlgoLib_EXTERNAL_OBJECTS =
 src/geomAlgoLib/libgeomAlgoLib.a: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o
 src/geomAlgoLib/libgeomAlgoLib.a: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o
 src/geomAlgoLib/libgeomAlgoLib.a: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o
+src/geomAlgoLib/libgeomAlgoLib.a: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o
 src/geomAlgoLib/libgeomAlgoLib.a: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make
 src/geomAlgoLib/libgeomAlgoLib.a: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgeomAlgoLib.a"
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && $(CMAKE_COMMAND) -P CMakeFiles/geomAlgoLib.dir/cmake_clean_target.cmake
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/geomAlgoLib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libgeomAlgoLib.a"
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && $(CMAKE_COMMAND) -P CMakeFiles/geomAlgoLib.dir/cmake_clean_target.cmake
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/geomAlgoLib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build: src/geomAlgoLib/libgeomAlgoLib.a
 .PHONY : src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/clean:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib && $(CMAKE_COMMAND) -P CMakeFiles/geomAlgoLib.dir/cmake_clean.cmake
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib && $(CMAKE_COMMAND) -P CMakeFiles/geomAlgoLib.dir/cmake_clean.cmake
 .PHONY : src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/clean
 
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/depend:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3 /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4 /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/depend
 

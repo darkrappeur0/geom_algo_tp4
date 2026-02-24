@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3
+CMAKE_SOURCE_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build
+CMAKE_BINARY_DIR = /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/src/geomAlgoLib//CMakeFiles/progress.marks
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build/CMakeFiles 0
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/src/geomAlgoLib//CMakeFiles/progress.marks
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/clean
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/preinstall
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/preinstall
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/rule:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/rule
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/rule
 .PHONY : src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ geomAlgoLib: src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/rule
 
 # fast build rule for target.
 geomAlgoLib/fast:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build
 .PHONY : geomAlgoLib/fast
 
 example.o: example.cpp.o
@@ -135,7 +135,7 @@ example.o: example.cpp.o
 
 # target to build an object file
 example.cpp.o:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.o
 .PHONY : example.cpp.o
 
 example.i: example.cpp.i
@@ -143,7 +143,7 @@ example.i: example.cpp.i
 
 # target to preprocess a source file
 example.cpp.i:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.i
 .PHONY : example.cpp.i
 
 example.s: example.cpp.s
@@ -151,7 +151,7 @@ example.s: example.cpp.s
 
 # target to generate assembly for a file
 example.cpp.s:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/example.cpp.s
 .PHONY : example.cpp.s
 
 io.o: io.cpp.o
@@ -159,7 +159,7 @@ io.o: io.cpp.o
 
 # target to build an object file
 io.cpp.o:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.o
 .PHONY : io.cpp.o
 
 io.i: io.cpp.i
@@ -167,7 +167,7 @@ io.i: io.cpp.i
 
 # target to preprocess a source file
 io.cpp.i:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.i
 .PHONY : io.cpp.i
 
 io.s: io.cpp.s
@@ -175,15 +175,39 @@ io.s: io.cpp.s
 
 # target to generate assembly for a file
 io.cpp.s:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/io.cpp.s
 .PHONY : io.cpp.s
+
+lissage.o: lissage.cpp.o
+.PHONY : lissage.o
+
+# target to build an object file
+lissage.cpp.o:
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.o
+.PHONY : lissage.cpp.o
+
+lissage.i: lissage.cpp.i
+.PHONY : lissage.i
+
+# target to preprocess a source file
+lissage.cpp.i:
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.i
+.PHONY : lissage.cpp.i
+
+lissage.s: lissage.cpp.s
+.PHONY : lissage.s
+
+# target to generate assembly for a file
+lissage.cpp.s:
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/lissage.cpp.s
+.PHONY : lissage.cpp.s
 
 measures.o: measures.cpp.o
 .PHONY : measures.o
 
 # target to build an object file
 measures.cpp.o:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.o
 .PHONY : measures.cpp.o
 
 measures.i: measures.cpp.i
@@ -191,7 +215,7 @@ measures.i: measures.cpp.i
 
 # target to preprocess a source file
 measures.cpp.i:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.i
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.i
 .PHONY : measures.cpp.i
 
 measures.s: measures.cpp.s
@@ -199,7 +223,7 @@ measures.s: measures.cpp.s
 
 # target to generate assembly for a file
 measures.cpp.s:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.s
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(MAKE) $(MAKESILENT) -f src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/build.make src/geomAlgoLib/CMakeFiles/geomAlgoLib.dir/measures.cpp.s
 .PHONY : measures.cpp.s
 
 # Help Target
@@ -217,6 +241,9 @@ help:
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"
+	@echo "... lissage.o"
+	@echo "... lissage.i"
+	@echo "... lissage.s"
 	@echo "... measures.o"
 	@echo "... measures.i"
 	@echo "... measures.s"
@@ -231,6 +258,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

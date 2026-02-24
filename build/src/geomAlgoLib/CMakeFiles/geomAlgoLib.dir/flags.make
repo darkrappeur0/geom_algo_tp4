@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DCGAL_USE_GMPXX=1
 
-CXX_INCLUDES = -I/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp3/geom_algo_tp3/src/geomAlgoLib
+CXX_INCLUDES = -I/home/local.isima.fr/machutaux/shared/tpnotergeoalgo/tp4/geom_algo_tp4/src/geomAlgoLib
 
 CXX_FLAGS = -frounding-math
 
