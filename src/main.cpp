@@ -75,8 +75,13 @@ int main(int argc, char *argv[]){
     geomAlgoLib::writeOFF(newMesh2,"output3.off");
 
 
+    auto newMesh3 = geomAlgoLib::facteur_de_diffusion_n_iter(myMesh,1,20.0);
 
+    geomAlgoLib::writeOFF(newMesh3,"output4.off");
 
+    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,100,2.0,-1.5);
+
+    geomAlgoLib::writeOFF(newMesh4,"output5.off");
 
 
     std::cout << "The end..." << std::endl;
