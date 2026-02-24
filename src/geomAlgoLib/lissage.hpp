@@ -12,4 +12,7 @@ namespace geomAlgoLib
 
     Mesh lissage_de_taubin(const Mesh & myMesh,double lambda,double mu);
     Mesh lissage_de_taubin_n_iter(const Mesh & myMesh, int n,double lambda,double mu);
+
+    Mesh lissage_1_iter_ponderer(const Mesh & myMesh);
+    Mesh lissage_n_iter_ponderer(const Mesh & myMesh, int n);
 }

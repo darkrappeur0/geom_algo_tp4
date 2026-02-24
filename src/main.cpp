@@ -79,9 +79,15 @@ int main(int argc, char *argv[]){
 
     geomAlgoLib::writeOFF(newMesh3,"output4.off");
 
-    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,100,2.0,-1.5);
+    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,10,0.33,-0.34);  //2.0 et -1.5 pour 100 iteration est intéressant
 
     geomAlgoLib::writeOFF(newMesh4,"output5.off");
+
+    auto newMesh5 = geomAlgoLib::lissage_n_iter_ponderer(myMesh,4);
+
+    geomAlgoLib::writeOFF(newMesh2,"output6.off");
+
+    
 
 
     std::cout << "The end..." << std::endl;
