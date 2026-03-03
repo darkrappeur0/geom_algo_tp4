@@ -3,17 +3,13 @@
 namespace geomAlgoLib
 {
 
-    /*
     
-    
-    
-        Lissage laplacien simple correspondant a la 1.1 
-    
-    
-    
-    
-    */
     Mesh lissage_1_iter(const Mesh & myMesh){
+        /*
+    
+        Lissage laplacien simple correspondant a la 1.1) 
+    
+        */
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
         for(auto v = myMesh.vertices_begin(); v != myMesh.vertices_end(); ++v){
@@ -42,6 +38,7 @@ namespace geomAlgoLib
         return temp_mesh;
     } 
 
+
     Mesh lissage_n_iter(const Mesh & myMesh, int n){
         Mesh temp_mesh = myMesh;
         for(int i = 0;i<n;i++){
@@ -52,18 +49,13 @@ namespace geomAlgoLib
     }
 
 
-    /*
-    
-    
+    Mesh facteur_de_diffusion(const Mesh & myMesh,double lambda){
+        /*
     
         Lissage laplacien avec un facteur de diffusion
         correspond a la question 1.3)
     
-    
-    
-    */
-
-    Mesh facteur_de_diffusion(const Mesh & myMesh,double lambda){
+        */
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
         for(auto v = myMesh.vertices_begin(); v != myMesh.vertices_end(); ++v){
@@ -73,7 +65,7 @@ namespace geomAlgoLib
             while (c!=0){
                 auto u = h->opposite()->vertex();
                 auto vector = u->point() - v->point();
-                vector_total = vector_total + vector;   // faire le calcul de la position du nouveau point.
+                vector_total = vector_total + vector;   
                 ++h;
                 c=c-1;
             }
@@ -92,6 +84,7 @@ namespace geomAlgoLib
         return temp_mesh;
     } 
 
+
     Mesh facteur_de_diffusion_n_iter(const Mesh & myMesh, int n,double lambda){
         Mesh temp_mesh = myMesh;
         for(int i = 0;i<n;i++){
@@ -101,27 +94,19 @@ namespace geomAlgoLib
 
     }
 
+
+    Mesh lissage_de_taubin(const Mesh& myMesh, double lambda, double mu){
     /*
     
-    
-    
-        Lissage laplacien de Taubin dit lissage de Taubin
-        correspond a la question 2.a.5)
-    
-    
+    Lissage laplacien de Taubin dit lissage de Taubin
+    correspond a la question 2.a.5)
     
     */
-
-    Mesh lissage_de_taubin(const Mesh& myMesh, double lambda, double mu)
-{
     Mesh temp_mesh = myMesh;
 
     std::vector<Kernel::Point_3> positions_lambda;
     std::vector<Kernel::Point_3> positions_mu;
 
-    // ---------------------
-    // 1ère passe (lambda)
-    // ---------------------
     for(auto v = temp_mesh.vertices_begin(); v != temp_mesh.vertices_end(); ++v)
     {
         CGAL::Vector_3<Kernel> laplacian(0,0,0);
@@ -167,7 +152,8 @@ namespace geomAlgoLib
         v_it->point() = positions_mu[i];
 
     return temp_mesh;
-}
+    }   
+
 
     Mesh lissage_de_taubin_n_iter(const Mesh & myMesh, int n,double lambda,double mu){
         Mesh temp_mesh = myMesh;
@@ -179,18 +165,13 @@ namespace geomAlgoLib
     }
 
 
-    /*
-    
-    
+    Mesh lissage_1_iter_ponderer(const Mesh & myMesh){
+        /*
     
         Lissage laplacien ponderer via l'inverse de la distance du voisin
         correspond a la question 2.b.8.a)
     
-    
-    
-    */
-
-    Mesh lissage_1_iter_ponderer(const Mesh & myMesh){
+        */
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
         for(auto v = myMesh.vertices_begin(); v != myMesh.vertices_end(); ++v){
@@ -222,6 +203,7 @@ namespace geomAlgoLib
         return temp_mesh;
     } 
 
+
     Mesh lissage_n_iter_ponderer(const Mesh & myMesh, int n){
         Mesh temp_mesh = myMesh;
         for(int i = 0;i<n;i++){
@@ -231,19 +213,14 @@ namespace geomAlgoLib
 
     }
 
-    /*
     
-    
+    Mesh lissage_1_iter_ponderer_cotangentes(const Mesh & myMesh){
+        /*
     
         Lissage laplacien ponderer via les angles cotangentes
         correspond a la question 2.b.8.b)
     
-    
-    
-    */
-
-    
-    Mesh lissage_1_iter_ponderer_cotangentes(const Mesh & myMesh){
+        */
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
         for(auto v = myMesh.vertices_begin(); v != myMesh.vertices_end(); ++v){
@@ -306,9 +283,6 @@ namespace geomAlgoLib
 
     }
         
-
-
-
 
 }
 
