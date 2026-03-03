@@ -3,6 +3,16 @@
 namespace geomAlgoLib
 {
 
+    /*
+    
+    
+    
+        Lissage laplacien simple correspondant a la 1.1 
+    
+    
+    
+    
+    */
     Mesh lissage_1_iter(const Mesh & myMesh){
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
@@ -41,6 +51,18 @@ namespace geomAlgoLib
 
     }
 
+
+    /*
+    
+    
+    
+        Lissage laplacien avec un facteur de diffusion
+        correspond a la question 1.3)
+    
+    
+    
+    */
+
     Mesh facteur_de_diffusion(const Mesh & myMesh,double lambda){
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
@@ -78,6 +100,17 @@ namespace geomAlgoLib
         return temp_mesh;
 
     }
+
+    /*
+    
+    
+    
+        Lissage laplacien de Taubin dit lissage de Taubin
+        correspond a la question 2.a.5)
+    
+    
+    
+    */
 
     Mesh lissage_de_taubin(const Mesh& myMesh, double lambda, double mu)
 {
@@ -146,6 +179,16 @@ namespace geomAlgoLib
     }
 
 
+    /*
+    
+    
+    
+        Lissage laplacien ponderer via l'inverse de la distance du voisin
+        correspond a la question 2.b.8.a)
+    
+    
+    
+    */
 
     Mesh lissage_1_iter_ponderer(const Mesh & myMesh){
         Mesh temp_mesh = myMesh;
@@ -188,8 +231,19 @@ namespace geomAlgoLib
 
     }
 
+    /*
     
-    Mesh lissage_1_iter_ponderer_contangentes(const Mesh & myMesh){
+    
+    
+        Lissage laplacien ponderer via les angles cotangentes
+        correspond a la question 2.b.8.b)
+    
+    
+    
+    */
+
+    
+    Mesh lissage_1_iter_ponderer_cotangentes(const Mesh & myMesh){
         Mesh temp_mesh = myMesh;
         std::vector<Kernel::Point_3> new_positions;
         for(auto v = myMesh.vertices_begin(); v != myMesh.vertices_end(); ++v){
@@ -243,10 +297,10 @@ namespace geomAlgoLib
         return temp_mesh;
     }
 
-    Mesh lissage_n_iter_ponderer_contangentes(const Mesh & myMesh, int n){
+    Mesh lissage_n_iter_ponderer_cotangentes(const Mesh & myMesh, int n){
         Mesh temp_mesh = myMesh;
         for(int i = 0;i<n;i++){
-            temp_mesh = lissage_1_iter_ponderer_contangentes(temp_mesh);
+            temp_mesh = lissage_1_iter_ponderer_cotangentes(temp_mesh);
         }
         return temp_mesh;
 

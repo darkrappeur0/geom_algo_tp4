@@ -26,71 +26,63 @@ int main(int argc, char *argv[]){
     geomAlgoLib::writeOFF(myMesh,"meshdebase.off");
 
     /*
-    geomAlgoLib::FacetDoubleMap tab = geomAlgoLib::aire_calcul(myMesh);
-	std::cout << "apres le calcul de l'aire au carrée" << std::endl;
-    unsigned c = 0;
-    for ( auto i = tab.begin();i!=tab.end();++i){
-        c=c+1;
-        std::cout << "aire a la " << c << "-eme valeur : " <<i->second << std::endl;
-        CGAL::Vector_3<geomAlgoLib::Kernel> v = geomAlgoLib::calcul_angle(i->first);
-        std::cout << "voici la valeur de v " << v << std::endl;
-        
-        
-    }
-    geomAlgoLib::StoreinFiles(myMesh,tab,"test.off");
-
-    geomAlgoLib::FacetDoubleMap angle = geomAlgoLib::angle_min_calcul(myMesh);
-
-    c=0;
-
-    for(auto i = angle.begin();i!=angle.end();++i){
-        c=c+1;
-        std::cout << "plus petit angle en degrés de la " << c << "-eme face : " <<i->second << " et son aire : " << tab[i->first] << std::endl;
-    }
-
-    geomAlgoLib::FacetStringMap res = geomAlgoLib::etiquettage(tab);
     
-    c = 0;
-    for(auto i = res.begin();i!=res.end();++i){
-        c=c+1;
-        std::cout << "etiquette de la " << c << "-eme face : " <<i->second << " et son aire : " << tab[i->first] << std::endl;
-    }
-    
+        lissage laplacien 1 iter
 
-    
-    
-    geomAlgoLib::StoreinFiles_labels(myMesh,res,tab,"etiquettes.off");
-    
-    //std::cout << "tableau des aires" << tab << std::endl;
-    */
-
-
+    */    
     auto newMesh = geomAlgoLib::lissage_1_iter(myMesh);
 
     geomAlgoLib::writeOFF(newMesh,"output2.off");
 
-
+    /*
+    
+        lissage laplacien n iter
+    
+    */
     auto newMesh2 = geomAlgoLib::lissage_n_iter(myMesh,4);
 
     geomAlgoLib::writeOFF(newMesh2,"output3.off");
 
-
+    /*
+    
+        lissage laplacien facteur de diffusion n iter
+    
+    */
     auto newMesh3 = geomAlgoLib::facteur_de_diffusion_n_iter(myMesh,1,0.5);
 
     geomAlgoLib::writeOFF(newMesh3,"output4.off");
+
+    /*
+    
+        lissage laplacien de taubin n iter
+    
+    */
 
     auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,50,0.33,-0.34);  //2.0 et -1.5 pour 100 iteration est intéressant
 
     geomAlgoLib::writeOFF(newMesh4,"output5.off");
 
+    /*
+    
+        lissage laplacian ponderer via distances du vecteur v - u n iter
+    
+    */
+
     auto newMesh5 = geomAlgoLib::lissage_n_iter_ponderer(myMesh,10);
 
     geomAlgoLib::writeOFF(newMesh5,"output6.off");
 
-    auto newMesh6 = geomAlgoLib::lissage_n_iter_ponderer_contangentes(myMesh,5);
+    /*
+    
+        lissage laplacian ponderer via cotangentes n iter
+    
+    */
+
+    auto newMesh6 = geomAlgoLib::lissage_n_iter_ponderer_cotangentes(myMesh,5);
 
     geomAlgoLib::writeOFF(newMesh6,"output7.off");
 
     std::cout << "The end..." << std::endl;
+
     return 0;
 }

@@ -16,6 +16,6 @@ namespace geomAlgoLib
     Mesh lissage_1_iter_ponderer(const Mesh & myMesh);
     Mesh lissage_n_iter_ponderer(const Mesh & myMesh, int n);
 
-    Mesh lissage_1_iter_ponderer_contangentes(const Mesh & myMesh);
-    Mesh lissage_n_iter_ponderer_contangentes(const Mesh & myMesh, int n);
+    Mesh lissage_1_iter_ponderer_cotangentes(const Mesh & myMesh);
+    Mesh lissage_n_iter_ponderer_cotangentes(const Mesh & myMesh, int n);
 }
