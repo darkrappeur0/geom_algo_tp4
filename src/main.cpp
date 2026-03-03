@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
     auto genus = geomAlgoLib::computeGenus(myMesh);
     std::cout << "The Genus of [" << meshPath << "] is = " << std::to_string(genus) << std::endl;
 
-    geomAlgoLib::writeOFF(myMesh,"output.off");
+    geomAlgoLib::writeOFF(myMesh,"meshdebase.off");
 
     /*
     geomAlgoLib::FacetDoubleMap tab = geomAlgoLib::aire_calcul(myMesh);
@@ -75,20 +75,21 @@ int main(int argc, char *argv[]){
     geomAlgoLib::writeOFF(newMesh2,"output3.off");
 
 
-    auto newMesh3 = geomAlgoLib::facteur_de_diffusion_n_iter(myMesh,1,20.0);
+    auto newMesh3 = geomAlgoLib::facteur_de_diffusion_n_iter(myMesh,1,0.5);
 
     geomAlgoLib::writeOFF(newMesh3,"output4.off");
 
-    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,10,0.33,-0.34);  //2.0 et -1.5 pour 100 iteration est intéressant
+    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,50,0.33,-0.34);  //2.0 et -1.5 pour 100 iteration est intéressant
 
     geomAlgoLib::writeOFF(newMesh4,"output5.off");
 
-    auto newMesh5 = geomAlgoLib::lissage_n_iter_ponderer(myMesh,4);
+    auto newMesh5 = geomAlgoLib::lissage_n_iter_ponderer(myMesh,10);
 
-    geomAlgoLib::writeOFF(newMesh2,"output6.off");
+    geomAlgoLib::writeOFF(newMesh5,"output6.off");
 
-    
+    auto newMesh6 = geomAlgoLib::lissage_n_iter_ponderer_contangentes(myMesh,5);
 
+    geomAlgoLib::writeOFF(newMesh6,"output7.off");
 
     std::cout << "The end..." << std::endl;
     return 0;
