@@ -280,9 +280,7 @@ namespace geomAlgoLib
             temp_mesh = lissage_1_iter_ponderer_cotangentes(temp_mesh);
         }
         return temp_mesh;
-
     }
         
-
 }
 

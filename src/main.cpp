@@ -39,7 +39,7 @@ int main(int argc, char *argv[]){
         lissage laplacien n iter
     
     */
-    auto newMesh2 = geomAlgoLib::lissage_n_iter(myMesh,4);
+    auto newMesh2 = geomAlgoLib::lissage_n_iter(myMesh,10);
 
     geomAlgoLib::writeOFF(newMesh2,"output3.off");
 
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]){
         lissage laplacien facteur de diffusion n iter
     
     */
-    auto newMesh3 = geomAlgoLib::facteur_de_diffusion_n_iter(myMesh,1,0.5);
+    auto newMesh3 = geomAlgoLib::facteur_de_diffusion_n_iter(myMesh,10,0.5);
 
     geomAlgoLib::writeOFF(newMesh3,"output4.off");
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[]){
     
     */
 
-    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,50,0.33,-0.34);  //2.0 et -1.5 pour 100 iteration est intéressant
+    auto newMesh4 = geomAlgoLib::lissage_de_taubin_n_iter(myMesh,100,0.33,-0.34);  //2.0 et -1.5 pour 100 iteration est intéressant
 
     geomAlgoLib::writeOFF(newMesh4,"output5.off");
 
@@ -78,7 +78,7 @@ int main(int argc, char *argv[]){
     
     */
 
-    auto newMesh6 = geomAlgoLib::lissage_n_iter_ponderer_cotangentes(myMesh,5);
+    auto newMesh6 = geomAlgoLib::lissage_n_iter_ponderer_cotangentes(myMesh,10);
 
     geomAlgoLib::writeOFF(newMesh6,"output7.off");
 
